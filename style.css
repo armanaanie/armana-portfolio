@@ -18,6 +18,12 @@
     color: #757575;
     margin-bottom: 30px;
 }
+ .subtitle1{
+    font-size: 16px;
+    color: #757575;
+    line-height: 24px;}
+
+
 .open-sans {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -138,4 +144,49 @@ nav .menu a{
 }
 #card-container .cards .card .card-subtitle{
     line-height: 28px;
+}
+#resume-container{
+    margin-top:130px ;
+    text-align: center;
+}
+#resume-container .resume{
+    display: flex;
+    justify-content: space-between;
+    gap: 71px;
+    text-align: left;
+}
+#resume-container .resume-info{
+    margin-bottom: 60px;
+
+}
+#resume-container .title1{
+    font-size: 30px;
+    color: #474747;
+    margin-bottom: 20px;
+}
+
+
+#foot-container{
+    margin-top:113px;
+    background-color: #FFF8F3;
+    padding:  230px 130px;
+}
+#foot-container .foot-info{
+    display: flex;
+   justify-content: space-around;
+  
+}
+#foot-container .foot-info .foot1{
+    margin-right:71px ;
+}
+#foot-container .foot-info .foot1  img{
+    margin-top:30px ;
+    margin-right: 24px;
+}
+#foot-container .foot-info .foot2 input[type="text"],
+#foot-container .foot-info .foot2 textarea{
+    width: 461px;
+    padding: 15px;
+    margin-bottom: 24px;
+
 }

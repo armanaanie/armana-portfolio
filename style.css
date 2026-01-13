@@ -2,13 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}.container{
- width: 75%;
-    max-width: 1199px;
+}.container{max-width: 1200px;
     margin: 0 auto;
 }
 .title{
-    font-size: 35px;
+    font-size: 2rem;
     font-weight: bold;
     color: #181818;
     margin-bottom: 30px;
@@ -19,7 +17,7 @@
     margin-bottom: 30px;
 }
  .subtitle1{
-    font-size: 16px;
+    font-size: 1rem;
     color: #757575;
     line-height: 24px;}
 
@@ -31,7 +29,7 @@
 header{
     background-image: url(./images/developer.png),url(./images/header_bg.png);
     background-repeat: no-repeat;
-    background-position: 38px 23px,bottom right; 
+    background-position:35px 100px,bottom right; 
     padding-top: 50px;
 }
 nav{
@@ -40,7 +38,7 @@ nav{
     justify-content: space-between;
 }
 .logo h2{
-    font-size: 45px;
+    font-size: 3rem;
 
 }
 .color-orange{
@@ -63,32 +61,31 @@ nav .menu a{
     border-radius: 5px;
     border: none;
     color: #FFF8F3;
-    padding: 18px 35px;
+    padding: 18px 20px;
     font-weight: bold;
 }
 .btn2{
     background-color: #FFF8F3;
     color: #FD6E0A;
     border: 1px solid #FD6E0A;
-    margin-left: 29px;
+    margin-left: 20px;
 }
 #banner{
    display: flex;
    justify-content: space-between;
-  
-    margin: 161px 38px 0px 230px;
-    align-items: center;
+    padding: 161px 38px 0px 130px;
+
 
 }
 #banner .banner-content h2{
-    font-size: 45px;
+    font-size: 2.5rem;
     font-weight: 600;
     color: #474747;
     margin-bottom: 5px;
     
 }
 #banner .banner-content h1{
-    font-size: 85px;
+    font-size: 5rem;
     font-weight:bold ;
     margin-bottom: 20px;
 
@@ -99,7 +96,7 @@ nav .menu a{
     margin-bottom: 30px;
 }
 #banner .banner-content .banner-image{
-    max-width: 585px;
+    max-width: 100%
 }
 #about{
     padding: 131px 157px;
@@ -167,9 +164,9 @@ nav .menu a{
 
 
 #foot-container{
-    margin-top:113px;
+    margin-top:100px;
     background-color: #FFF8F3;
-    padding:  230px 130px;
+    padding:  130px;
 }
 #foot-container .foot-info{
     display: flex;
@@ -189,4 +186,86 @@ nav .menu a{
     padding: 15px;
     margin-bottom: 24px;
 
+}
+
+@media (max-width:1024px) and (min-width:575px){
+    .container{
+        padding: 0 30px;
+        margin: 0 20px;
+    }
+    .btn{
+  margin-bottom: 20px;
+    font-size: 1.25rem;
+   
+}
+#about{
+    padding: 31px 57px;
+    margin-top: 70px;
+    
+}
+ #card-container{
+    margin-top:30px ;
+}
+#card-container .subtitle{
+    padding:  10px ;
+}
+#card-container .cards{
+    gap: 14px;
+}
+#foot-container{
+    margin-top:30px;
+    padding:  30px;
+}
+#foot-container .foot-info .foot2 input[type="text"],
+#foot-container .foot-info .foot2 textarea{
+    width: 100%;
+    margin-bottom: 14px;
+
+}
+
+}
+@media screen and (max-width:575px){
+    header{
+   background-image: none;
+    background-position:0px ,0px
+}#banner .banner-content .banner-image{
+   width: 100%;
+}
+nav,#banner,#about .info,#card-container .cards,#resume-container .resume,#foot-container .foot-info{
+  gap: 20px;
+   flex-direction: column;
+    padding: 20px
+}
+.container{
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+#about{
+    padding: 20px 17px;
+    margin-top: 30px;
+}
+.btn{
+  margin-bottom: 20px;
+    font-size: 1.25rem;
+   
+}
+#card-container{
+    margin-top:30px ;
+    text-align: center;
+}
+#card-container .subtitle{
+    padding:  30px;
+}#foot-container{
+    margin-top:30px;
+    background-color: #FFF8F3;
+    padding:  20px;
+}
+#foot-container .foot-info .foot2 input[type="text"],
+#foot-container .foot-info .foot2 textarea{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 14px;
+
+}
 }

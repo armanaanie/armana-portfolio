@@ -231,6 +231,9 @@ nav .menu a{
 }#banner .banner-content .banner-image{
    width: 100%;
 }
+.banner-image img{
+    max-width: 100%;
+}
 nav,#banner,#about .info,#card-container .cards,#resume-container .resume,#foot-container .foot-info{
   gap: 20px;
    flex-direction: column;
